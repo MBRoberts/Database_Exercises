@@ -6,7 +6,7 @@
  	artist VARCHAR(255),
  	name VARCHAR(255),
  	release_date YEAR,
- 	sales DECIMAL(9,2),
+ 	sales FLOAT,
  	genre VARCHAR(255),
  	PRIMARY KEY(id)
  	);
