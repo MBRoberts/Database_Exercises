@@ -33,3 +33,11 @@ SELECT * FROM employees
 SELECT * FROM employees
     WHERE last_name LIKE '%q%'
     AND last_name NOT LIKE '%qu%';
+    
+-- extra query exercise
+    
+SELECT first_name FROM employees WHERE last_name LIKE 'h%' ORDER BY birth_date;
+
+SELECT first_name, last_name FROM employees WHERE birth_date LIKE '%12-25' AND hire_date LIKE '%12-25';
+
+SELECT count(*) FROM employees WHERE birth_date LIKE '%-02-29';
