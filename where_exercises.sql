@@ -2,12 +2,7 @@
 
 
 SELECT * FROM employees
-    WHERE first_name = 'Irena'
-    AND gender = 'M'
-    OR first_name =  'Vidya'
-    AND gender = 'M'
-    OR first_name =  'Maya'
-    AND gender = 'M';
+    WHERE (first_name = 'Irena' OR first_name =  'Vidya' OR first_name =  'Maya') AND gender = 'M';
     
 SELECT * FROM employees
     WHERE last_name LIKE 'E%';
